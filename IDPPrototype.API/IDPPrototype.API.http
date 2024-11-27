@@ -1,0 +1,6 @@
+@IDPPrototype.API_HostAddress = http://localhost:5027
+
+GET {{IDPPrototype.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
