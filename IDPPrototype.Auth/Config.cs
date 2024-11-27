@@ -34,7 +34,12 @@ public static class Config
             new Client
             {
                 ClientId = "idp-prototype-public",
-                A
+                AllowedGrantTypes = GrantTypes.Code,
+                ClientSecrets =
+                {
+                    new Secret("secret".Sha256())
+                },
+                AllowedScopes = { "api", }
             }
         };
 }
